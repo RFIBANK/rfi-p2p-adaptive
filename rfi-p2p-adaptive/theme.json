@@ -23,6 +23,11 @@
                 "PAYTRANSFER_ERROR_ADAPTIVE",
                 "PAYTRANSFER_FOOTER_ADAPTIVE"
               ],
+    "asyncLayout": [ "page",
+                "PAYTRANSFER_HEADER_ADAPTIVE",
+                "PAYTRANSFER_ASYNC_ADAPTIVE",
+                "PAYTRANSFER_FOOTER_ADAPTIVE"
+              ],
     "acquireLayout": "ACQUIRE_TRIGGER",
     "fragments": {
     }

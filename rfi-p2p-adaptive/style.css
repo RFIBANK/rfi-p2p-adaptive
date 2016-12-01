@@ -47,7 +47,7 @@ input {
 */
 
 #header {
-	padding: 8px 0;
+  padding: 28px 0 8px;
 }
 #rfi_logo {
 	background: url(rfi_logo_h.png) no-repeat center;
@@ -77,10 +77,17 @@ input {
 	clear: both;
 	line-height: 32px;
 	font-size: 28px;
-	padding: 5px 15px 15px;
 	max-width: 750px;
 	margin: auto;
+	padding: 5px 15px 30px;
 }
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+	font-size:16px;
+}
+
 /*
 
 	TRANSFER BOX
@@ -293,6 +300,7 @@ input.master {
 }
 #proceedBox {
 	float: right;
+	margin-top: -25px;
 }
 input#send_button, #submitBox button, #popupBox button {
 	width: 200px;
@@ -479,6 +487,24 @@ input#send_button:disabled, #submitBox button:disabled, #popupBox button:disable
     background: url("ajax-loader.gif") no-repeat 50px;
 }
 
+.email {
+	border: 2px solid #bdbcbc !important;
+	width: 245px;
+}
+.emailBox {
+	display: inline-block;
+	margin-left: 10px;
+}
+.email-error {
+	color: red;
+}
+.emailContainer {
+	display: flex;
+	float: left;
+	margin-bottom: 15px;
+	padding-left: 27px;
+}
+
 /*
 
 	MEDIA
@@ -528,7 +554,7 @@ input#send_button:disabled, #submitBox button:disabled, #popupBox button:disable
 }
 */
 #agreeBox {
-	width: 374px;
+/*	width: 374px;*/
 	line-height: 16px;
 }
 #description h3 {
@@ -634,9 +660,31 @@ input#send_button:disabled, #submitBox button:disabled, #popupBox button:disable
 #closePopup {
 	top: -30px;
 }
+
+
+.emailBox {
+	display:block;
+	margin-left:0;
+	margin-top: 10px;
+}
+.emailContainer {
+	line-height:14px;
+	display:block;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.email {
+	width: 256px;
+}
+#proceedBox {
+    margin-bottom: 10px;
+   
+   
 }
 
 @media screen and (max-width: 450px) {
+	
+	
 #mainBox {
 	padding: 0;
 }
@@ -775,4 +823,10 @@ input#send_button:disabled, #submitBox button:disabled, #popupBox button:disable
 #bottomFrame, #topFrame{
 	display:none;
 }
+
+.email {
+	width: 210px;
+}
+
+
 }
